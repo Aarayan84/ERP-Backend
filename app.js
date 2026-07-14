@@ -34,7 +34,7 @@ app.use("/api/v1/dashboard", dashboardRoutes);
 
 
 app.get("/",(req,res)=>{
-    req.json({
+    res.json({
         success:true,
         message : "ERP API Running Successfully"
     });
